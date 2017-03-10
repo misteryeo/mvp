@@ -1,7 +1,11 @@
 var http = require('http');
+var express = require('express');
+var app = express();
 
-var server = http.createServer(function(req, res) {
+app.get('/', function(req, res) {
+  res.send('Hello world!')
+})
 
-}).listen(3000, function() {
-  console.log('Server is running!');
+app.listen(3000, function() {
+  console.log('Express server is running!')
 })
