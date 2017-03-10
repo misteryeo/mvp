@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/misteryeo/hrsf73-mvp/issues"
   },
-  "homepage": "https://github.com/misteryeo/hrsf73-mvp#readme"
+  "homepage": "https://github.com/misteryeo/hrsf73-mvp#readme",
+  "dependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
