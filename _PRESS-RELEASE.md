@@ -1,4 +1,4 @@
-# Project Name #
+# ICEBREAKER #
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -16,29 +16,31 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
  
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+## What is it called? ##
+  Icebreaker
 
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+## Tagline ##
+  No more boring small talk.
 
-## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+## What does it do? ##
+  Randomised conversation starters when meeting new people in different contexts. 
 
 ## Problem ##
-  > Describe the problem your product solves.
+  Have you ever been stuck wondering how to say something interesting to that new person you just met? Do you find yourself always being asked where you're from or where you work? Ever wondered how dinner conversations could be more interesting?
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  An easy-to-use generator of conversation topics across different subject areas to prepare you for both professional and social contexts.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  "We're revolutionising the art of conversation."
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  Head on over to our website. No sign-up or login required. Just start talking!
 
-## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+## Testimonials ##
+  "I've never had such interesting conversations in my life!" - David Brodie
+  "It doesn't matter where we're from, it matters who we are. What a great app!" - Jong Kim
+  "Yay, I can meet even more people at Hack Reactor!" - Kay Albito
 
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+## Try it for yourself ##
+  Come try it for yourself here: www.mvp-icebreaker.com
