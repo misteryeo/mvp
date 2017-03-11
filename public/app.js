@@ -6,11 +6,11 @@ $(document).ready(function() {
   function getLine() {
     console.log('Is this invoked? Line 7')
     $.ajax({
-      url: '127.0.0.1:3000/conversations',
+      url: 'http://127.0.0.1:3000/conversations',
       method: 'GET',
       success: function(data) {
         console.log('Success!', data)
-
+        data;
         // We want to render this data on the page
       },
       error: function(error) {
@@ -23,7 +23,7 @@ $(document).ready(function() {
   // Add a line that user wants
   function addLine() {
     $.ajax({
-      url: '127.0.0.1:3000/conversations',
+      url: 'http://127.0.0.1:3000/conversations',
       method: 'POST',
       headers: {
         'content-type': 'application/json'
