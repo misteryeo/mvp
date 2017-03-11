@@ -10,7 +10,7 @@ $(document).ready(function() {
       method: 'GET',
       success: function(data) {
         console.log('Success!', data)
-        data;
+        renderLine(data);
         // We want to render this data on the page
       },
       error: function(error) {
@@ -46,8 +46,9 @@ $(document).ready(function() {
   }
 
   // Render line
-  function renderLine() {
-
+  function renderLine(line) {
+    var newLine = $('<div>').text(`${line}`);
+    $('#line').append(newLine);
   }
-
+  
 });
