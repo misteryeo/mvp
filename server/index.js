@@ -27,12 +27,15 @@ app.use(express.static('public'));
 //app.use('/scripts', express.static('node_modules/angular'));
 //app.use(cookieParser);
 
-app.get('/', function(req, res) {
-
+app.get('/conversations', function(req, res) {
+  console.log('Icecream?');
   connection.query('SELECT oneline FROM convolines ORDER BY RANDOM() LIMIT 1', function(error, results, fields){
+    if(error) {
+      console.error(error);
+    }
     console.log('results', results);
+    res.send();
   });
-
 });
 
 // app.get('/', function(req, res) {

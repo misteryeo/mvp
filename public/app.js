@@ -1,27 +1,29 @@
 $(document).ready(function() {
-
+  getLine();
   // Upon load, we want the initial line to load
 
   // Get a single starter line
-  // function getLine() {
-  //   $.ajax({
-  //     url: 'http://127.0.0.1:3000/',
-  //     method: 'GET',
-  //     success: function(data) {
-  //       console.log('Success!', data)
-  //       // We want to render this data on the page
-  //     },
-  //     error: function(error) {
-  //       console.error('Error', error)
-  //     }
+  function getLine() {
+    console.log('Is this invoked? Line 7')
+    $.ajax({
+      url: '127.0.0.1:3000/conversations',
+      method: 'GET',
+      success: function(data) {
+        console.log('Success!', data)
 
-  //   })
-  // } 
+        // We want to render this data on the page
+      },
+      error: function(error) {
+        console.error('Error', error)
+      }
+
+    })
+  } 
 
   // Add a line that user wants
   function addLine() {
     $.ajax({
-      url: 'http://127.0.0.1:3000/',
+      url: '127.0.0.1:3000/conversations',
       method: 'POST',
       headers: {
         'content-type': 'application/json'
