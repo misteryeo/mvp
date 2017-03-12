@@ -1,5 +1,9 @@
 body {
-  background-color: lightgrey;
+  background-color: #B4CFFA;
+  background-image: url('https://68.media.tumblr.com/bad518b173514a85d147c02081036f89/tumblr_nypq6ofeFM1rlwpsao5_r1_1280.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 h1 {
@@ -8,79 +12,72 @@ h1 {
   font-style: oblique;
   font-variant: small-caps;
   font-weight: bold;
-  line-height: 66px;
+  line-height: 40px;
+  vertical-align: bottom;
   padding-left: 60px;
-  background-color: lightblue;
 }
 
 h2 {
+  margin: 0;
   font-family: Tahoma;
   font-size: 25px;
   font-style: oblique;
   font-variant: small-caps;
   font-weight: bold;
   line-height: 26px;
-  padding-left: 80px;
-  background-color: lightblue;
+  padding-left: 120px;
 }
 
 .line {
-  font-size: 50px;
+  font-size: 25px;
   text-align: center;
-  vertical-align: center;
-  padding-top: 13%;
+  padding-top: 8%;
 }
 
 #line {
-  border: 2px solid black;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  float: left;
-  margin-top: 20px;
-  margin-left: 80px;
-  margin-right:20px;
-  width: 500px;
-  height: 500px;
-  background-color: orange;
-}
-
-#nav {
-  border: 2px solid red;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  margin-top: 250px;
-  width: 28%;
-  height: 100px;
-  overflow: auto;
-}
-
-#interaction {
-  border: 2px solid blue;
-
-  margin-top: 20px;
-  width: 15%;
   font-family: Tahoma;
-  font-size: 20px;
+  color: white;
+  font-variant: small-caps;
+  font-weight: bold
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-top: 240px;
+  margin-left: 975px;
+  margin-right:20px;
+  width: 330px;
+  height: 180px;
+  background-color: #614D61;
+}
+
+.clickbtn {
+  background-color: #1A2653;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 120px;
+  float: left;
 }
 
 /* Dropdown Button BELOW */
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+  background-color: #1A2653;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
+    margin-left: 450px;
 }
 
 /* Dropdown Content (Hidden by Default) */

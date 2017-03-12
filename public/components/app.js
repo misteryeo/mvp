@@ -1,14 +1,19 @@
 angular.module('MyApp')
 
-.controller('myController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+.controller('myController', ['$scope', '$http', '$location', function($scope, $http, $location) {
 
   this.text = 'Time to break some ice!';
 
   this.category = 'social';
 
   this.navClick = () => {
-    console.log($routeParams);
-
+    if($location.url() === '#social') {
+      this.category = 'social';
+    } else if ($location.url() === '#professional') {
+      this.category = 'professional';
+    } else if ($location.url() === '#nsfw') {
+      this.category = 'nsfw';
+    }
   }
 
   this.buttonClick = () => {
@@ -18,10 +23,10 @@ angular.module('MyApp')
     ).then(function (response) {
       console.log('Success!', response)
       context.text = response.data;
-      // Need to render response
     }, function (response) {
       console.error('Error', response)
     });
+
   };
 
 }])
