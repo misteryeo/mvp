@@ -6,7 +6,9 @@ angular.module('MyApp')
 
 .directive('nav', function() {
   return {
-    scope: {},
+    scope: {
+      click: '<'
+    },
     controller: 'navController',
     controllerAs: 'ctrl',
     bindToController: true,
