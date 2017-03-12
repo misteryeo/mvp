@@ -1,7 +1,6 @@
 angular.module('MyApp')
 
 .controller('myController', function() {
-  console.log('dan');
   this.greeting = 'Have you ever been stuck wondering how to say something interesting to that new person you just met?';
   
   this.firstClick = function() {
