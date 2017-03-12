@@ -1,19 +1,20 @@
 angular.module('MyApp')
 
-.controller('myController', function() {
-  this.greeting = 'Have you ever been stuck wondering how to say something interesting to that new person you just met?';
-  
-  this.firstClick = function() {
-    this.greeting = 'Do you find yourself always being asked where you\'re from or where you work?';
+.controller('myController', ['$scope', '$http', function($scope, $http) {
+
+  this.buttonClick = () => {
+    var context = this;
+    $http.get('/conversations'
+    ).then(function (response) {
+      console.log('Success!', response)
+      context.text = response.data;
+      // Need to render response
+    }, function (response) {
+      console.error('Error', response)
+    });
   };
 
-  this.secondClick = function() {
-    this.greeting = 'Ever wondered how dinner conversations could be more interesting?'
-  };
-
-  this.CTA = 'Click on the button to try!'
-
-})
+}])
 
 .directive('oneline', function() {
   return {
