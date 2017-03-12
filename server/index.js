@@ -24,8 +24,8 @@ app.use(bodyParser.json())
 app.use(express.static('public'));
 
 
-app.get('/conversations', function(req, res) {
-  connection.query('SELECT oneline FROM convolines ORDER BY RAND() LIMIT 1', function(error, results, fields){
+app.get('/social', function(req, res) {
+  connection.query('SELECT oneline FROM convolines WHERE category="social" ORDER BY RAND() LIMIT 1', function(error, results, fields){
     if(error) {
       console.error(error);
     } else {
@@ -35,6 +35,27 @@ app.get('/conversations', function(req, res) {
   });
 });
 
+app.get('/professional', function(req, res) {
+  connection.query('SELECT oneline FROM convolines WHERE category="professional" ORDER BY RAND() LIMIT 1', function(error, results, fields){
+    if(error) {
+      console.error(error);
+    } else {
+      console.log('results', results[0].oneline);
+      res.send(results[0].oneline);
+    }
+  });
+});
+
+app.get('/nsfw', function(req, res) {
+  connection.query('SELECT oneline FROM convolines WHERE category="nsfw" ORDER BY RAND() LIMIT 1', function(error, results, fields){
+    if(error) {
+      console.error(error);
+    } else {
+      console.log('results', results[0].oneline);
+      res.send(results[0].oneline);
+    }
+  });
+});
 
 app.post('/conversations', function(req, res) {
   var body = [];
