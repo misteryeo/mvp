@@ -1,4 +1,4 @@
-angular.module('MyApp');
+angular.module('MyApp')
 
 .controller('myController', function() {
   console.log('dan');
@@ -16,7 +16,7 @@ angular.module('MyApp');
 
 })
 
-.directive('myapp', function() {
+.directive('oneline', function() {
   return {
     scope: {},
     controller: 'myController',
@@ -24,4 +24,4 @@ angular.module('MyApp');
     bindToController: true,
     templateUrl: '../templates/line.html'
   };
-});
+})
