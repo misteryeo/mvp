@@ -1,7 +1,7 @@
 angular.module('MyApp')
 
 .controller('navController', function() {
-  this.dropdown = 'Hello';
+  // Include dropdown menu for categories
 })
 
 .directive('nav', function() {
